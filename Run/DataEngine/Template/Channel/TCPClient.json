@@ -1,0 +1,27 @@
+{
+    "name" : "TCPClient",
+    "plugName" : "libChanTcpClient",
+    "param" : [
+        {
+            "name" : "LocalIP",
+            "editName" : "本地IP地址",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "192.168.1.1"
+        },
+        {
+            "name" : "RemoteIP",
+            "editName" : "对端IP地址",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "192.168.1.2"
+        },
+        {
+            "name" : "RemotePort",
+            "editName" : "对端端口号",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "5678"
+        }
+    ]
+}

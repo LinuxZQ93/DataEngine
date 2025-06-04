@@ -1,0 +1,63 @@
+<!-- edited with XML Spy v4.0.1 U (http://www.xmlspy.com) by Michael Eick (SISCO/Engineering) -->
+<!--
+01/11/12  JRB  Add functions for Edition 2.
+               Del UCA functions mvlu_rbepd_rd_ind_fun, mvlu_rbepd_wr_ind_fun, mvlu_trgs_rd_ind_fun, and mvlu_trgs_wr_ind_fun
+               (not needed for IEC 61850)
+09/29/11  JRB  Added mvl61850_lcb_*.
+03/23/11  JRB  Added lln0_health_*.
+08/29/07  JRB  Added mvlu_sqnum_wr_ind_fun for UCA/ODF support
+07/10/07  CRM  Added mvlu_rbepd_rd_ind_fun, mvlu_rbepd_wr_ind_fun, mvlu_trgs_rd_ind_fun, and mvlu_trgs_wr_ind_fun
+04/05/06  JRB  Add mvl61850_datset_wr_ind
+09/16/05  JRB  Add u_ctl_sbow_comp_wr_ind
+05/05/05  JRB  Del mvlu_sqnum_int16u_wr_ind_fun used for "brcbXX$SqNum" (61850 says not writable).
+	       Del mvlu_sqnum_wr_ind_fun used for "urcbXX$SqNum" (61850 says not writable).
+12/10/04  JRB  Replace mvl61850_sbo_select_rd_ind with u_ctl_sbo_rd_ind.
+               Replace u_sbo_*, u_direct_* with u_ctl_*.
+               Add mvl61850_beh_stval_rd_ind.
+09/20/04  JRB  Add "mvl61850_select_rd_ind", u_sbo_*, u_direct_*, u_cancel_*.
+07/01/04  JRB  New file for application configured with SCL.
+-->
+<Leafmap>
+	<Leaf Name="$dynamic" RdIndFun="u_custom_rd_ind" WrIndFun="u_custom_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_ctl_sbo_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_custom_rd_ind" WrIndFun="u_ctl_sbow_comp_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvl61850_beh_stval_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="lln0_health_stval_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="lln0_health_q_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="lln0_health_t_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+
+	<!-- Use same RdIndFun so no new read functions needed -->
+	<Leaf Name="$dynamic" RdIndFun="u_custom_rd_ind" WrIndFun="u_ctl_oper_ctlval_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_custom_rd_ind" WrIndFun="u_ctl_oper_other_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_custom_rd_ind" WrIndFun="u_cancel_comp_wr_ind" Ref=""/>
+	<!--
+        These required for dynamically created BRCB and URCB (e.g. created from SCL).
+	-->
+	<Leaf Name="$dynamic" RdIndFun="mvlu_rptena_rd_ind_fun" WrIndFun="mvlu_rptena_wr_ind_fun" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_rptid_rd_ind_fun" WrIndFun="mvlu_rptid_wr_ind_fun" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_datsetna_rd_ind_fun" WrIndFun="mvl61850_datset_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_confrev_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_optflds_rd_ind_fun" WrIndFun="mvlu_optflds_wr_ind_fun" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_buftim_rd_ind_fun" WrIndFun="mvlu_buftim_wr_ind_fun" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_sqnum_rd_ind_fun" WrIndFun="mvlu_sqnum_wr_ind_fun" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_sqnum_int16u_rd_ind_fun" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_trgops_rd_ind_fun" WrIndFun="mvlu_trgops_wr_ind_fun" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_intgpd_rd_ind_fun" WrIndFun="mvlu_intgpd_wr_ind_fun" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_gi_rd_ind" WrIndFun="mvlu_gi_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_purgebuf_rd_ind" WrIndFun="mvlu_purgebuf_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_entryid_rd_ind" WrIndFun="mvlu_entryid_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_timeofentry_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvlu_resv_rd_ind_fun" WrIndFun="mvlu_resv_wr_ind_fun" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_custom_rd_ind" WrIndFun="mvl61850_lcb_logena_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_custom_rd_ind" WrIndFun="mvl61850_lcb_datset_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_custom_rd_ind" WrIndFun="mvl61850_lcb_other_wr_ind" Ref=""/>
+	<!-- Functions for Edition 2 RCB ResvTms, Owner. -->
+	<Leaf Name="$dynamic" RdIndFun="mvl61850_brcb_resvtms_rd_ind" WrIndFun="mvl61850_brcb_resvtms_wr_ind" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="mvl61850_owner_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<!-- Functions for Edition 2 RCB LGOS. -->
+	<Leaf Name="$dynamic" RdIndFun="u_LGOS_NdsCom_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_LGOS_LastStNum_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_LGOS_St_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_LGOS_SimSt_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/>
+	<Leaf Name="$dynamic" RdIndFun="u_LGOS_ConfRevNum_rd_ind" WrIndFun="u_no_write_allowed" Ref=""/> 
+</Leafmap>

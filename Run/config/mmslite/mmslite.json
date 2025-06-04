@@ -1,0 +1,13 @@
+{
+	"mmslite" : 
+	{
+		"client" : 
+		{
+			"ICDName" : "./config/mmslite/client/IEC61850.icd",
+			"IEDName" : "KHPDF",
+			"accessPoint" : "P1",
+			"detail" : [],
+			"ycReadTag" : "mag"
+		}
+	}
+}

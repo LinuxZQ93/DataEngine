@@ -1,0 +1,20 @@
+{
+    "name" : "IEC104转发",
+    "template" : "IEC104转发",
+    "param": {
+        "setIFrameTime": 0,
+        "callTime": 1,
+        "setTime": 1,
+        "checkSerial": 1,
+        "measureBit": 1,
+        "commAddr": 1,
+        "yxStart": 1,
+        "ycStart": 16385,
+        "ymStart": 25601,
+        "ykStart": 24586,
+        "ytStart": 25089,
+        "yxType": 0,
+        "ykType": 0,
+        "ycType": 0
+    }
+}

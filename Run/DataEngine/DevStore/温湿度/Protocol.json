@@ -1,0 +1,30 @@
+{
+    "name" : "Modbus采集",
+    "template" : "Modbus采集",
+    "param": {
+        "ifClear" : 0,
+        "Modbus" : 0,
+        "FileName" : 0,
+        "CallType" : 0,
+        "BFC" : 500,
+        "Tout" : 500,
+        "CallPuls" : 0,
+        "PulseTime" : 1,
+        "Link" : 0,
+        "P1" : 1,
+        "P1W" : 0,
+        "P2" : 3,
+        "P3" : 1,
+        "P4" : 4,
+        "P5" : 5,
+        "P12" : 6,
+        "P6" : 0,
+        "P7" : 2,
+        "P8" : 0,
+        "P9" : 1,
+        "P10" : 0,
+        "P14" : 0,
+        "P13" : 0,
+        "P11" : 1
+    }
+}

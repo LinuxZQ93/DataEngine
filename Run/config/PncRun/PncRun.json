@@ -1,0 +1,48 @@
+{
+	"PncRun" : 
+	{
+		"dev" : [],
+		"template" : 
+		{
+			"DLT645" : 
+			{
+				"attr" : "采集表模板dlt电表",
+				"point" : "dlt645设备"
+			},
+			"defaultColl" : 
+			{
+				"attr" : "采集表模板Iot平台",
+				"point" : "MODBUS系列"
+			},
+			"defaultTrans" : 
+			{
+				"point" : "转发模板"
+			},
+			"modbus扩展" : 
+			{
+				"attr" : "采集表模板Iot平台",
+				"point" : "MODBUS扩展"
+			},
+			"亿嘉和机器人" : 
+			{
+				"attr" : "采集表模板Iot平台",
+				"point" : "JSIOT"
+			},
+			"采集-lora集中器" : 
+			{
+				"attr" : "采集表模板Iot平台",
+				"point" : "Lora_设备"
+			},
+			"采集IEC61850" : 
+			{
+				"attr" : "采集表模板Iot平台",
+				"point" : "61850采集模板"
+			},
+			"采集_IEC104" : 
+			{
+				"attr" : "采集表模板Iot平台",
+				"point" : "104系列"
+			}
+		}
+	}
+}

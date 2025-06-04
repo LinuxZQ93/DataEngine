@@ -1,0 +1,13 @@
+{
+	"RpcConfig" : 
+	{
+		"LocalIP" : "192.168.31.104",
+		"RemoteRpc" : 
+		{
+			"IP" : "127.0.0.1",
+			"Port" : 6543
+		},
+		"RpcPort" : 6544,
+		"RpcVersion" : 1
+	}
+}

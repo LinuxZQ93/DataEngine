@@ -1,0 +1,41 @@
+{
+    "name" : "RS-485",
+    "plugName" : "libChanRS-485",
+    "param": [
+        {
+            "name" : "comName",
+            "editName": "串口名称",
+            "editType": 1,
+            "range": "2.4Glora#470Mlora#COM_1#COM_2#COM_3#COM_4#COM_5#COM_6#COM_7#COM_8#COM_9#IO",
+            "defaultValue": "0"
+        },
+        {
+            "name" : "baudRate",
+            "editName": "波特率",
+            "editType": 1,
+            "range": "1200#2400#4800#9600#19200#38400#57600#115200",
+            "defaultValue": "3"
+        },
+        {
+            "name" : "stopBit",
+            "editName": "停止位",
+            "editType": 1,
+            "range": "1位#1.5位#2位",
+            "defaultValue": "0"
+        },
+        {
+            "name" : "parity",
+            "editName": "校验位",
+            "editType": 1,
+            "range": "无校验#奇校验#偶校验",
+            "defaultValue": "0"
+        },
+        {
+            "name" : "dataBit",
+            "editName": "数据位",
+            "editType": 1,
+            "range": "5#6#7#8",
+            "defaultValue": "3"
+        }
+    ]
+}

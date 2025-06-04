@@ -1,0 +1,199 @@
+{
+    "name" : "TransTable",
+    "param" : {
+        "signal" : [
+            {
+                "name": "dotName",
+                "editName": "转发点名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "devName",
+                "editName": "设备名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "pointId",
+                "editName": "数据点号",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "invert",
+                "editName": "是否取反",
+                "editType": 1,
+                "range": "否#是",
+                "dataType" : 0,
+                "defaultValue": 0
+            }
+        ],
+        "measure" : [
+            {
+                "name": "dotName",
+                "editName": "转发点名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "devName",
+                "editName": "设备名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "pointId",
+                "editName": "数据点号",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "addCoef",
+                "editName": "加系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 0
+            },
+            {
+                "name": "multiCoef",
+                "editName": "乘系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 1
+            },
+            {
+                "name": "responseRate",
+                "editName": "数据字节",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 2
+            }
+        ],
+        "pulse" : [
+            {
+                "name": "dotName",
+                "editName": "转发点名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "devName",
+                "editName": "设备名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "pointId",
+                "editName": "数据点号",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "addCoef",
+                "editName": "加系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 0
+            },
+            {
+                "name": "multiCoef",
+                "editName": "乘系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 1
+            }
+        ],
+        "control" : [
+            {
+                "name": "dotName",
+                "editName": "转发点名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "devName",
+                "editName": "设备名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "pointId",
+                "editName": "数据点号",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            }
+        ],
+        "param" : [
+            {
+                "name": "dotName",
+                "editName": "转发点名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "devName",
+                "editName": "设备名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "pointId",
+                "editName": "数据点号",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "addCoef",
+                "editName": "加系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 0
+            },
+            {
+                "name": "multiCoef",
+                "editName": "乘系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 1
+            }
+        ]
+    }
+}

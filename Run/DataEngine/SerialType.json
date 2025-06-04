@@ -1,0 +1,17 @@
+{
+    "serialType": {
+        "RS-485": {
+            "2.4Glora": "tty35",
+            "COM_1": "tty36",
+            "COM_2": "ttyRS485_2",
+            "COM_3": "ttyRS485_3",
+            "COM_4": "ttyRS485_4",
+            "IO": "ttyS0"
+        },
+        "RS-232": {
+            "470Mlora": "ttyLora470",
+            "COM_1": "ttyRS232_1",
+            "COM_2": "ttyRS232_2"
+        }
+    }
+}

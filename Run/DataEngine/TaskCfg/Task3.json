@@ -1,0 +1,66 @@
+{
+    "name": "Task3",
+    "enable" : true,
+    "param": {
+        "attribute": {
+            "bTans": false,
+            "content": [
+                {
+                    "name": "温湿度2",
+                    "devTypeName": "温湿度",
+                    "address": 1,
+                    "description": "温湿度",
+                    "msgInfo": "th",
+                    "nodeModel": "th",
+                    "nodeId": "abc12345",
+                    "extra": {
+                        "enableLog": true,
+                        "logLimitSize" : 10,
+                        "logLimitNum" : 5,
+                        "enablePrintFrame": true
+                    }
+                },
+                {
+                    "name": "温湿度3",
+                    "devTypeName": "温湿度",
+                    "address": 2,
+                    "description": "温湿度",
+                    "msgInfo": "th",
+                    "nodeModel": "th",
+                    "nodeId": "abc123456",
+                    "extra": {
+                        "enableLog": false,
+                        "logLimitSize" : 10,
+                        "logLimitNum" : 5,
+                        "enablePrintFrame": false
+                    }
+                },
+                {
+                    "name": "空调1",
+                    "devTypeName": "空调",
+                    "address": 3,
+                    "description": "空调",
+                    "msgInfo": "th",
+                    "nodeModel": "th",
+                    "nodeId": "abc1234567",
+                    "extra": {
+                        "enableLog": true,
+                        "logLimitSize" : 10,
+                        "logLimitNum" : 5,
+                        "enablePrintFrame": true
+                    }
+                }
+            ],
+            "template": "common"
+        },
+        "channel": {
+            "enablePrintSource": false,
+            "template": "TCPServer",
+            "content": {
+                "localIP": "0.0.0.0",
+                "localPort": 2406,
+                "remoteIP": ""
+            }
+        }
+    }
+}

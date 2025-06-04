@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 (http://www.xmlspy.com) (SISCO/Engineering) -->
+
+<!-- ****************************************************************** -->
+<!-- * SISCO MODULE HEADER ******************************************** -->
+<!-- ****************************************************************** -->
+<!-- *   (c) Copyright Systems Integration Specialists Company, Inc.,   -->
+<!-- *                      2001 - 2004, All Rights Reserved            -->
+<!-- *                                                                  -->
+<!-- * MODULE NAME : osicfg.xml                                         -->
+<!-- * PRODUCT(S)  : MMSEASE-Lite                                       -->
+<!-- *                                                                  -->
+<!-- * MODULE DESCRIPTION :  Configuration File for Lean-T Stack        -->
+<!-- *                                                                  -->
+<!-- *  This file is used to set the log masks used to control          -->
+<!-- *  logging performed by the MMS-EASE Lite Debug Libraries,         -->
+<!-- *  as well as to set memory debug flags. This module is            -->
+<!-- *  read by the source module 'osicfgx.c'.                          -->
+<!-- *                                                                  -->
+<!-- *  MODULE DESCRIPTION :                                            -->
+<!-- *                                                                  -->                                                                           
+<!-- *  Configuration file for Lean-T Stack                             -->
+<!-- *                                                                  --> 
+<!-- *  The configuration file has three sections.                      -->
+<!-- *  The order of sections in the configuration file is relevant:	-->
+<!-- *                                                                  -->  
+<!-- *  Network                                                         -->			
+<!-- *                                                                  --> 					
+<!-- *  Transport     This section may be empty (default parameters	-->
+<!-- *                will be used).					-->
+<!-- *                                                                  -->  
+<!-- *  Addressing    This section should be present to                 -->
+<!-- *      	      properly terminate parsing of cfg file.		-->
+<!-- *                                                                  --> 
+<!-- *  Note:  Most parameters are optional unless stated that          -->
+<!-- *         they are mandatory.  If an optional parameter is         -->
+<!-- *         not configured in this file a default value will         -->
+<!-- *         be used.                                                 -->
+<!-- *                                                                  -->  
+<!-- * MODIFICATION LOG :                                               -->
+<!-- *  Date     Who   Rev  Comments                                    -->
+<!-- * =======  =====  === ==========================                   -->
+<!-- * 03/26/08  GLB    05  Removed: Max_Num_Connections and            -->
+<!--                                 Rfc1006_Max_Num_Conns              -->
+<!-- * 01/27/04  ASK    04  Commented out DTD and Schema references     -->
+<!-- * 01/15/04  EJV    03  Added Rfc1006_Max_Spdu_Outstanding          -->
+<!-- * 11/05/01  GLB    02  Added MMS section                           -->
+<!-- * 08/31/00  GLB    01  Module created from existing lean.cfg       --> 
+<!-- ****************************************************************** -->
+<!--
+#############################################################################
+#  NOTE:  Descriptions of parameters are at the bottom of this module. 
+###########################################################################-->
+
+<!-- Uncomment to use DTD / Schema 
+<!DOCTYPE STACK_CFG SYSTEM "..\osicfg.dtd">
+<STACK_CFG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\osicfg.xsd">
+-->
+
+<STACK_CFG>
+	<MMS>
+		<Max_Mms_Pdu_Length>3200000</Max_Mms_Pdu_Length>
+		<Max_Calling_Connections>4</Max_Calling_Connections>
+		<Max_Called_Connections>0</Max_Called_Connections>
+	</MMS>
+	<Network>
+		<Clnp>
+			<Lifetime>50</Lifetime>
+			<Lifetime_Decrement>1</Lifetime_Decrement>
+			<Cfg_Timer>120</Cfg_Timer>
+			<Esh_Delay>5</Esh_Delay>
+			<Local_NSAP>49 00 01 53 49 53 43 09 01 01</Local_NSAP>
+		</Clnp>
+	</Network>
+	<Transport>
+		<Tp4>
+			<Max_Tpdu_Length>1024</Max_Tpdu_Length>
+			<Max_Remote_Cdt>4</Max_Remote_Cdt>
+			<Local_Cdt>4</Local_Cdt>
+			<Max_Spdu_Outstanding>4</Max_Spdu_Outstanding>
+			<Window_Time>10</Window_Time>
+			<Inactivity_Time>120</Inactivity_Time>
+			<Retransmission_Time>10</Retransmission_Time>
+			<Max_Transmissions>2</Max_Transmissions>
+			<Ak_Delay>2</Ak_Delay>
+		</Tp4>
+		<Tcp>
+			<Rfc1006_Max_Tpdu_Len>1024</Rfc1006_Max_Tpdu_Len>
+			<Rfc1006_Max_Spdu_Outstanding>50</Rfc1006_Max_Spdu_Outstanding>
+		</Tcp>
+	</Transport>
+	<NetworkAddressing>
+		<LocalAddressList>
+			<LocalAddress>
+				<AR_Name>local1</AR_Name>
+				<AP_Title>1 3 9999 33</AP_Title>
+				<AE_Qualifier>33</AE_Qualifier>
+				<Psel>00 00 00 01</Psel>
+				<Ssel>00 01</Ssel>
+				<Tsel>00 01</Tsel>
+				<TransportType>TCP</TransportType>
+				<!-- TP4 or TCP or TPX -->
+			</LocalAddress>
+			<LocalAddress>
+				<AR_Name>local1cl</AR_Name>
+				<AP_Title>1 3 9999 33</AP_Title>
+				<AE_Qualifier>33</AE_Qualifier>
+				<Psel>00 00 00 02 </Psel>
+				<Ssel>00 01</Ssel>
+				<Tsel>00 01</Tsel>
+				<TransportType>TCP</TransportType>
+				<!-- TP4 or TCP or TPX -->
+			</LocalAddress>
+		</LocalAddressList>
+		<RemoteAddressList>
+			<RemoteAddress>
+				<AR_Name>remote1</AR_Name>
+				<AP_Title>1 3 9999 23</AP_Title>
+				<AE_Qualifier>23</AE_Qualifier>
+				<Psel>00 00 00 01</Psel>
+				<Ssel>00 01</Ssel>
+				<Tsel>00 01</Tsel>
+				<NetAddr Type="IPADDR">127.0.0.1</NetAddr>
+			        <!-- EXAMPLE:  <NetAddr Type="IPADDR">208.176.40.52</NetAddr> -->
+				<!-- EXAMPLE:  <NetAddr Type="NSAP">49 00 01 53 49 53 43 44 02 01</NetAddr> -->
+			</RemoteAddress>
+		</RemoteAddressList>
+	</NetworkAddressing>
+</STACK_CFG>
+<!--
+#############################################################################
+#
+#  Description of NETWORK parameters 
+#
+#				CLNP Only Parameters:
+#				======================
+#   
+#   Lifetime	
+#				Valid range is from 1 to 255 (in 500 ms units).
+#
+#   Lifetime_Decrement	
+#				Valid range is from 1 to 255 (in 500 ms units).
+#
+#   Cfg_Timer        The Configuration Timer specifies how 
+#                               often ESH will be sent.
+#				Valid range is from 0 to 32767 (seconds).
+#				Note that the Holding Time in ESH sent
+#				is set to 2*CfgTimer.
+#				If Cfg_Timer=0 then ESH will not be sent.
+#  
+#   Esh_Delay	Delay time before first ESH is sent.
+#				Valid range is from 0 to 32767 (seconds).
+#
+#               COMMON Parameters:
+#               ===================               
+#
+#   Local_MAC	Local MAC address (up to 6 hex bytes
+#				separated by spaces).
+#				For the ADLC sub-network the local MAC is
+#				a required parameter and it has to match
+#				the address in the adlc.cfg file!
+# 				For ADLC sub-network the MAC address is a
+#				USHORT number (2 hex bytes swapped,
+#				example: 30 00 hex swapped = 48 decimal).
+#               For the Ethernet this param will be read
+#				from the driver during initialization
+#				(any value from config file will be ignored).
+#
+#   Local_NSAP	Local NSAP (up to 20 hex bytes separated
+#				by spaces, example: 49 00 11 11).
+#				This is mandatory parameter.
+#
+#############################################################################
+#
+#  Description of TRANSPORT parameters 
+#
+#				TP4 Only Parameters:
+#				====================
+#
+#   Max_Tpdu_Length	 	
+#                               Max length of TPDU. Base on SNPDU size.
+#				Valid values are: 128, 256, 512, 1024,
+#				2048, 4096, 8192.
+#
+#   Max_Remote_Cdt		
+#                               Max credits we can handle.
+#			        Will allocate this many TPDU_DT structures.
+#			        Valid values are: 2, 4, 8, 16.
+#			        CRITICAL: MUST BE POWER OF 2.
+#
+#   Local_Cdt          Credit value we will ALWAYS send in ACK.
+#			        We only accept in-sequence TPDUs so only
+#			        purpose of this is to allow peer to send
+#			        ahead.
+#			        Valid range is from 1 to 15.
+#
+#   Max_Spdu_Outstanding	
+#                               Max num of SPDUs outstanding per connection.
+#				Will allocate this many SPDU_INFO structs
+#				for transmit queue.
+#				Valid values are: 2, 4, 8, 16.
+#				CRITICAL: MUST BE POWER OF 2.
+#
+#   Max_Spdu_Length	  	
+#                               Max SPDU length.
+#				Should be based on max ACSE msg size.
+#				Valid range is from 1 to 65535.
+#
+#   Window_Time			
+#                               Indicates the maximum time that the
+#                               transport will wait before retransmitting 
+#                               up-to-date window information. 
+#                               Valid range is from 1 to 255 (seconds).
+#
+#   Inactivity_Time		
+#               
+#				Valid range is from 1 to 255 (seconds).
+#
+#   Retransmission_Time		
+#                                Indicates the maximum time the transport 
+#                                will wait for acknowledgement before 
+#                                retransmitting a TPDU.
+#				Valid range is from 1 to 255 (seconds).
+#
+#   Max_Transmissions		
+#                               Max number transmissions of a TPDU.
+#				Valid range is from 1 to 255.
+#
+#   Ak_delay           The TP4 skips some service cycles before
+#				sending the transport ACK, to allow
+#				concatination with DATA packet.
+#				The recommended value for this parameter is 2.
+#
+#				TCP (RFC1006) only parameters:
+#				==============================
+#
+#   rfc1006_Max_Tpdu_Length 	
+#                               Max length of TPDU.
+#				Valid values are: 128, 256, 512, 1024,
+#				2048, 4096, 8192 and 65531
+#
+#   rfc1006_Max_Spdu_Outstanding	
+#                               Max num of SPDUs that can be queued in gensock2.
+#
+#############################################################################
+#
+#  Description of ADDRESSING parameters 
+#  Parameters for local and remote Directory Information Base (DIB) 
+#
+#   Common_Name	Is an alias for the P-Address. It may be up
+#				        to 64 characters long.
+#
+#   AP-Title		Is an array of up to 16 SHORT decimal integers.
+#                       The first value should be 1 (ISO)(valid range 0-2).
+#                       The second value should be 1, 2 or 3 (valid range 0-39).
+#                       The third value is open for assignment (If you addressing is 
+#                       local this value should be 9999, the rest of the values are
+#                       arbitrary.
+#
+#                       This is an Object Identifier assigned by the 
+#                       network naming authority, representing the 
+#                       Application Process Title for your particular
+#                       application process.
+#
+#   AE-Qualifier	Is a LONG decimal integer.
+#
+#                       This is an optional integer value used to qualify the 
+#                       Application Entity.
+#
+#   Psel		Up to 16 (octets) characters of ASCII encoded hex.
+#
+#                       This octet string represents the Presentation Selector
+#                       used to identify a Presentation SAP.
+#
+#   Ssel		Up to 16 (octets) characters of ASCII encoded hex.
+#
+#                       The octet string represents the Session Selector used
+#                       to identify a Session SAP that can be up to 16 octets in length.
+#
+#   Tsel		Up to 32 (octets) characters of ASCII encoded hex.
+#
+#                       The octet string represents the Transport Selector used
+#                       to identify a Transport SAP that can be up to 16 octets in length.
+#                       
+#
+#   Transport	TP4 - for Transport Class 4
+#				TCP - for Transport Class 0 (RFC1006)
+#
+#				TP4 only parameters:
+#				====================
+#   NSAP	    Up to 20 characters of ASCII encoded hex
+#				TP4 only, in remote_begin section(s)
+#
+#				TCP (RFC1006) only parameters:
+#				==============================
+#   IPADDR	    IP address or alias name defined in hosts
+#				file for given IP address.
+#				Only in remote_begin section(s)
+#
+##############################################################################
+-->

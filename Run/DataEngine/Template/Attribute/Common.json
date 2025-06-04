@@ -1,0 +1,54 @@
+{
+    "name" : "Common",
+    "param" : [
+        {
+            "name" : "name",
+            "editName" : "设备名称",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "abc"
+        },
+        {
+            "name" : "devTypeName",
+            "editName" : "设备类型",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : ""
+        },
+        {
+            "name" : "address",
+            "editName" : "地址",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "description",
+            "editName" : "描述",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "th"
+        },
+        {
+            "name" : "mfgInfo",
+            "editName" : "厂商信息",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "th"
+        },
+        {
+            "name" : "nodeModel",
+            "editName" : "设备型号",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "th"
+        },
+        {
+            "name" : "nodeId",
+            "editName" : "SN号",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "th"
+        }
+    ]
+}

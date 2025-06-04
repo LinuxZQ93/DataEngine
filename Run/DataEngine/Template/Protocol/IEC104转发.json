@@ -1,0 +1,105 @@
+{
+    "name" : "IEC104转发",
+    "plugName" : "EngineTransIEC104",
+    "param" : [
+        {
+            "name" : "setIFrameTime",
+            "editName" : "发送多少次I帧必须收到确认(0表示不需要)",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "callTime",
+            "editName" : "总召时间",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "setTime",
+            "editName" : "对时时间",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "checkSerial",
+            "editName" : "检测序列号",
+            "editType" : 1,
+            "range" : "是#否",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "measureBit",
+            "editName" : "遥测数据位",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "commAddr",
+            "editName" : "公共地址",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "yxStart",
+            "editName" : "遥信起始地址",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "ycStart",
+            "editName" : "遥测起始地址",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "ymStart",
+            "editName" : "遥脉起始地址",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "ykStart",
+            "editName" : "遥控起始地址",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "ytStart",
+            "editName" : "遥调起始地址",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "yxType",
+            "editName" : "遥信类型",
+            "editType" : 1,
+            "range" : "单点#双点",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "ykType",
+            "editName" : "遥控类型",
+            "editType" : 0,
+            "range" : "单点#双点",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "ycTi",
+            "editName" : "遥测类型",
+            "editType" : 0,
+            "range" : "浮点#无品质归一化#有品质归一化#标度",
+            "defaultValue" : "0"
+        }
+
+    ]
+}

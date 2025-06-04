@@ -1,0 +1,21 @@
+{
+	"log" : 
+	{
+		"Local" : 
+		{
+			"BufSize" : 81920,
+			"DeleteExistLog" : false,
+			"Enable" : true,
+			"LogName" : "PncLog",
+			"MaxLogNum" : 5,
+			"MaxLogSize" : 50
+		},
+		"Net" : 
+		{
+			"ConnectNum" : 5,
+			"Enable" : true,
+			"IP" : "0.0.0.0",
+			"Port" : 8760
+		}
+	}
+}

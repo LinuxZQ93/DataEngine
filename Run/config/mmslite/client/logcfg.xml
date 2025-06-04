@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LOG_CFG>
+   <!--
+   **************************************************************************
+   * SISCO MODULE HEADER ****************************************************
+   **************************************************************************
+   *   (c) Copyright Systems Integration Specialists Company, Inc.,         *
+   *                   2001-2008, All Rights Reserved                       *
+   *                                                                        *
+   * MODULE NAME : LogCfg.xml                                               *
+   * PRODUCT(S)  :                                                          *
+   *                                                                        *
+   * MODULE DESCRIPTION :  Logging Configuration File                       *
+   *                                                                        *
+   *  This file is used to set the log masks used to control logging        *
+   *  performed by the Product's Debug Libraries.                           *
+   *  This module is read by the source module 'logcfgx.c'.                 *
+   *                                                                        *
+   **************************************************************************
+   -->
+   <LogControl>
+       <LogCommon>
+           <LogElapsedTime>Off</LogElapsedTime>
+       </LogCommon>
+       <LogFileAttributes>
+           <LogFileEnable>On</LogFileEnable>
+           <LogFileName>clientmms.log</LogFileName>
+           <LogFileSize>1000000</LogFileSize>
+           <DestroyOldFile>Off</DestroyOldFile>
+           <HardFlush>Off</HardFlush>
+       </LogFileAttributes>
+       <LogIpcAttributes>
+           <LogIpcAppId>MMS-LITE-80X-001 CLIENT</LogIpcAppId>
+           <LogIpcMaxQueCount>10</LogIpcMaxQueCount>
+           <LogIpcListenEnable>Off</LogIpcListenEnable>
+           <LogIpcListenPort>55201</LogIpcListenPort>
+           <LogIpcNumListenPorts>1</LogIpcNumListenPorts>
+           <LogIpcMaxListenConn>1</LogIpcMaxListenConn>
+           <LogIpcCallEnable>On</LogIpcCallEnable>
+           <LogIpcCallingPort>55146</LogIpcCallingPort>
+           <LogIpcCallingIp>127.0.0.1</LogIpcCallingIp>
+           <LogIpcCallingBackoff>500</LogIpcCallingBackoff>
+           <LogIpcSmartMode>On</LogIpcSmartMode>
+           <LogIpcEditLogCfg>On</LogIpcEditLogCfg>
+           <LogIpcSealMode>2</LogIpcSealMode>
+           <LogIpcSealTimeWindow>10</LogIpcSealTimeWindow>
+       </LogIpcAttributes>
+   </LogControl>
+   <LogMasks>
+       <!-- Application Specific Log Masks -->
+       <LogConfigurationMasks>
+           <LOGCFG_FLOW>Off</LOGCFG_FLOW>
+       </LogConfigurationMasks>
+       <UserLogMasks>
+           <USER_LOG_CLIENT>Off</USER_LOG_CLIENT>
+           <USER_LOG_SERVER>Off</USER_LOG_SERVER>
+       </UserLogMasks>
+       <SecurityLogMasks>
+           <SEC_LOG_NERR>On</SEC_LOG_NERR>
+           <SEC_LOG_FLOW>Off</SEC_LOG_FLOW>
+           <SEC_LOG_DATA>Off</SEC_LOG_DATA>
+           <SEC_LOG_DEBUG>Off</SEC_LOG_DEBUG>
+           <SSLE_LOG_NERR>On</SSLE_LOG_NERR>
+           <SSLE_LOG_FLOW>Off</SSLE_LOG_FLOW>
+           <SSLE_LOG_DATA>Off</SSLE_LOG_DATA>
+           <SSLE_LOG_DEBUG>Off</SSLE_LOG_DEBUG>
+       </SecurityLogMasks>
+       <SemaphoreLogMasks>
+           <GS_LOG_NERR>On</GS_LOG_NERR>
+           <GS_LOG_FLOW>Off</GS_LOG_FLOW>
+       </SemaphoreLogMasks>
+       <Asn1LogMasks>
+           <ASN1_LOG_NERR>On</ASN1_LOG_NERR>
+           <ASN1_LOG_DEC>Off</ASN1_LOG_DEC>
+           <ASN1_LOG_ENC>Off</ASN1_LOG_ENC>
+       </Asn1LogMasks>
+       <MmsLogMasks>
+           <MMS_LOG_NERR>On</MMS_LOG_NERR>
+           <MMS_LOG_CLIENT>Off</MMS_LOG_CLIENT>
+           <MMS_LOG_SERVER>Off</MMS_LOG_SERVER>
+           <MMS_LOG_DEC>Off</MMS_LOG_DEC>
+           <MMS_LOG_ENC>Off</MMS_LOG_ENC>
+           <MMS_LOG_RT>Off</MMS_LOG_RT>
+           <MMS_LOG_RTAA>Off</MMS_LOG_RTAA>
+           <MMS_LOG_AA>Off</MMS_LOG_AA>
+       </MmsLogMasks>
+       <MvlLogMasks>
+           <MVLLOG_NERR>On</MVLLOG_NERR>
+           <MVLLOG_ACSE>Off</MVLLOG_ACSE>
+           <MVLLOG_ACSEDATA>Off</MVLLOG_ACSEDATA>
+           <MVLULOG_FLOW>Off</MVLULOG_FLOW>
+           <MVLULOG_DEBUG>Off</MVLULOG_DEBUG>
+       </MvlLogMasks>
+       <AcseLogMasks>
+           <ACSE_LOG_ENC>Off</ACSE_LOG_ENC>
+           <ACSE_LOG_DEC>Off</ACSE_LOG_DEC>
+           <COPP_LOG_DEC>Off</COPP_LOG_DEC>
+           <COPP_LOG_DEC_HEX>Off</COPP_LOG_DEC_HEX>
+           <COPP_LOG_ENC>Off</COPP_LOG_ENC>
+           <COPP_LOG_ENC_HEX>Off</COPP_LOG_ENC_HEX>
+           <COSP_LOG_DEC>Off</COSP_LOG_DEC>
+           <COSP_LOG_DEC_HEX>Off</COSP_LOG_DEC_HEX>
+           <COSP_LOG_ENC>Off</COSP_LOG_ENC>
+           <COSP_LOG_ENC_HEX>Off</COSP_LOG_ENC_HEX>
+       </AcseLogMasks>
+       <Tp4LogMasks>
+           <TP4_LOG_FLOWUP>Off</TP4_LOG_FLOWUP>
+           <TP4_LOG_FLOWDOWN>Off</TP4_LOG_FLOWDOWN>
+       </Tp4LogMasks>
+       <ClnpLogMasks>
+           <CLNP_LOG_NERR>On</CLNP_LOG_NERR>
+           <CLNP_LOG_REQ>Off</CLNP_LOG_REQ>
+           <CLNP_LOG_IND>Off</CLNP_LOG_IND>
+           <CLSNS_LOG_REQ>Off</CLSNS_LOG_REQ>
+           <CLSNS_LOG_IND>Off</CLSNS_LOG_IND>
+       </ClnpLogMasks>
+       <SxLogMasks>
+           <SX_LOG_NERR>On</SX_LOG_NERR>
+           <SX_LOG_DEC>Off</SX_LOG_DEC>
+           <SX_LOG_ENC>Off</SX_LOG_ENC>
+           <SX_LOG_FLOW>Off</SX_LOG_FLOW>
+           <SX_LOG_DEBUG>Off</SX_LOG_DEBUG>
+       </SxLogMasks>
+       <SocketLogMasks>
+           <!-- gensock2 logging -->
+           <SOCK_LOG_NERR>On</SOCK_LOG_NERR>
+           <SOCK_LOG_FLOW>Off</SOCK_LOG_FLOW>
+           <SOCK_LOG_TX>Off</SOCK_LOG_TX>
+           <SOCK_LOG_RX>Off</SOCK_LOG_RX>
+       </SocketLogMasks>
+       <SmpLogMasks>
+           <SMP_LOG_REQ>Off</SMP_LOG_REQ>
+           <SMP_LOG_IND>Off</SMP_LOG_IND>
+       </SmpLogMasks>
+       <MemLogMasks>
+           <MEM_LOG_CALLOC>Off</MEM_LOG_CALLOC>
+           <MEM_LOG_MALLOC>Off</MEM_LOG_MALLOC>
+           <MEM_LOG_REALLOC>Off</MEM_LOG_REALLOC>
+           <MEM_LOG_FREE>Off</MEM_LOG_FREE>
+       </MemLogMasks>
+   </LogMasks>
+   <!--
+   *********************************************************************************
+   *
+   ***** Log Common
+   *
+   *  LogElapsedTime        * Windows only feature
+   *                          ON  = provides high resolution elapsed time format
+   *                          OFF = standard time format
+   *
+   *****	Log File Attributes
+   *
+   *  LogFileEnable         * Log to a file - ON/OFF
+   *  LogFileName           * log file name, may include path
+   *  LogFileSize           * log file size in bytes
+   *  DestroyOldFile        * ON  = destroy existing log file
+   *                          OFF = append to existing log file
+   *  HardFlush   		 * close and reopen log file each time a message
+   *                          is logged - ON/OFF
+   *
+   *  LogFileName and LogFileSize are application specific
+   *
+   *****	IPC Logging Attributes
+   *
+   *  LogIpcAppId           * Application name
+   *  LogIpcMaxQueCount     * Max number of log messages queued for send
+   *  LogIpcListenEnable    * Enables logging through a specific port - ON/OFF
+   *  LogIpcListenPort      * Listen base port (see slog.h for SISCO used ports)
+   *  LogIpcNumListenPorts  * Range of ports for multiple applications to share
+   *  LogIpcMaxListenConn   * Max number of socket connections to accept per port
+   *
+   *  LogIpcAppId, LogIpcListenEnable, LogIpcListenPort and LogIpcSmartMode
+   *  are application specific
+   *
+   *****	IPC Logging Attributes for Log Viewer
+   *
+   *  LogIpcCallEnable      * Initiate connection to Log Viewer
+   *  LogIpcCallingPort     * Log Viewer calling port
+   *  LogIpcCallingIp       * Log Viewer IP address
+   *  LogIpcCallingBackoff  * ms to wait before retrying connection
+   *  LogIpcSmartMode       * In smart mode Log Viewer can issue START/STOP logging
+   *                          and use other enhanced capabilities (recommended)
+   *  LogIpcEditLogCfg      * Allow editing of "logcfg.xml" by Log Viewer
+   *
+   *****	Log Masks
+   *
+   *  Log masks are are application specific
+   *
+   *********************************************************************************
+   -->
+</LOG_CFG>

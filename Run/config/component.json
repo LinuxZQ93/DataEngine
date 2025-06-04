@@ -1,0 +1,14 @@
+{
+	"ConfigBase" : 
+	{
+		"Component" : 
+		{
+			"DataEngine" : 
+			{
+				"Priority" : 1
+			}
+		},
+		"maxStartPrio" : 1,
+		"minStartPrio" : 1
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"log" : 
+	{
+		"Local" : 
+		{
+			"BufSize" : 81920,
+			"DeleteExistLog" : false,
+			"Enable" : true,
+			"LogName" : "THLog",
+			"MaxLogNum" : 5,
+			"MaxLogSize" : 50
+		},
+		"Net" : 
+		{
+			"ConnectNum" : 5,
+			"Enable" : true,
+			"IP" : "0.0.0.0",
+			"Port" : 8760
+		},
+		"logNameList" : 
+		[
+			"THLog_20250529_175615_3543711.log",
+			"THLog_20250601_093324_148613.log",
+			"THLog_20250601_112622_612452.log",
+			"THLog_20250601_120231_759417.log",
+			"THLog_20250601_121236_801466.log"
+		]
+	}
+}

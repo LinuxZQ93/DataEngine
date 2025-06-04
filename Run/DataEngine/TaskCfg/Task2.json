@@ -1,0 +1,30 @@
+{
+    "name": "Task2",
+    "enable" : true,
+    "param": {
+        "attribute": {
+            "bTrans": true,
+            "content" : [
+                {
+                    "name": "test104Srv",
+                    "description" : "test",
+                    "extra": {
+                        "enableLog": true,
+                        "logLimitSize" : 10,
+                        "logLimitNum" : 5,
+                        "enablePrintFrame": true
+                    }
+                }
+            ]
+        },
+        "channel": {
+            "enablePrintSource": true,
+            "template": "TCPServer",
+            "content": {
+                "localIP": "0.0.0.0",
+                "localPort": 2404,
+                "remoteIP": ""
+            }
+        }
+    }
+}

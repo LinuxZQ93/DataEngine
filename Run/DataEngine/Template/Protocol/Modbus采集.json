@@ -1,0 +1,174 @@
+{
+    "name" : "Modbus采集",
+    "plugName" : "EngineCollModbus",
+    "param" : [
+        {
+            "name" : "ifClear",
+            "editName" : "通讯中断数据是否清零",
+            "editType" : 1,
+            "range" : "否#是",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "Modbus",
+            "editName" : "ModBus协议",
+            "editType" : 1,
+            "range" : "485#TCP",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "FileName",
+            "editName" : "规约版本号",
+            "editType" : 1,
+            "range" : "标准#上继#英泰莱小表#:施耐德",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "CallType",
+            "editName" : "数据模式",
+            "editType" : 1,
+            "range" : "RTU模式#ASCII模式",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "BFC",
+            "editName" : "发送时间间隔(毫秒)",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "500"
+        },
+        {
+            "name" : "Tout",
+            "editName" : "超时时间",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "500"
+        },
+        {
+            "name" : "CallPuls",
+            "editName" : "是否需要冒号",
+            "editType" : 1,
+            "range" : "不需要#需要",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "PulseTime",
+            "editName" : "装置地址字节个数",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "Link",
+            "editName" : "装置地址数据组装方式",
+            "editType" : 1,
+            "range" : "高前低后#低前高后",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "P1",
+            "editName" : "功能码字节个数",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "P1W",
+            "editName" : "功能码组装方式",
+            "editType" : 1,
+            "range" : "高前低后#低前高后",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "P2",
+            "editName" : "遥测功能码",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "3"
+        },
+        {
+            "name" : "P3",
+            "editName" : "遥信功能码",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "P4",
+            "editName" : "遥脉功能码",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "4"
+        },
+        {
+            "name" : "P5",
+            "editName" : "遥控功能码",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "5"
+        },
+        {
+            "name" : "P12",
+            "editName" : "遥调功能码",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "6"
+        },
+        {
+            "name" : "P6",
+            "editName" : "SOE功能码",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "P7",
+            "editName" : "校验数据字节个数",
+            "editType" : 0,
+            "range" : "",
+            "defaultValue" : "2"
+        },
+        {
+            "name" : "P8",
+            "editName" : "校验模式",
+            "editType" : 1,
+            "range" : "CRC校验#求和校验#无校验",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "P9",
+            "editName" : "校验数据的组装方式",
+            "editType" : 1,
+            "range" : "高前低后#低前高后",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "P10",
+            "editName" : "返回报文字组装方式",
+            "editType" : 1,
+            "range" : "字高前低后#字低前高后",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "P14",
+            "editName" : "返回报文字节组装方式",
+            "editType" : 1,
+            "range" : "字节高前低后#字节低前高后",
+            "defaultValue" : "0"
+        },
+        {
+            "name" : "P13",
+            "editName" : "返回数据长度字节个数",
+            "editType" : 1,
+            "range" : "1#2",
+            "defaultValue" : "1"
+        },
+        {
+            "name" : "P11",
+            "editName" : "负数显示方式",
+            "editType" : 1,
+            "range" : "绝对值#补码",
+            "defaultValue" : "1"
+        }
+    ]
+}

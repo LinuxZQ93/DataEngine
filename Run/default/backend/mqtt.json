@@ -1,0 +1,12 @@
+{
+	"backendMqtt" : 
+	{
+		"clientID" : "",
+		"ip" : "127.0.0.1",
+		"passwd" : "",
+		"port" : 1883,
+		"topTopic" : "",
+		"userName" : "",
+		"webPort" : 18830
+	}
+}

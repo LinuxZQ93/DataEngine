@@ -1,0 +1,190 @@
+{
+    "name" : "MmsServer",
+    "param" : {
+        "signal" : [
+            {
+                "name": "doName",
+                "editName": "数据点名称",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "yx"
+            },
+            {
+                "name": "prefix",
+                "editName": "前缀",
+                "editType": 0,
+                "range": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "lnClass",
+                "editName": "引用类",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "GGIO"
+            },
+            {
+                "name": "lnInst",
+                "editName": "实例号",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "1"
+            },
+            {
+                "name": "CDC",
+                "editName": "CDC类型",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "SPS"
+            }
+        ],
+        "measure" : [
+            {
+                "name": "doName",
+                "editName": "数据点名称",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "yc"
+            },
+            {
+                "name": "prefix",
+                "editName": "前缀",
+                "editType": 0,
+                "range": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "lnClass",
+                "editName": "引用类",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "GGIO"
+            },
+            {
+                "name": "lnInst",
+                "editName": "实例号",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "1"
+            },
+            {
+                "name": "CDC",
+                "editName": "CDC类型",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "MV"
+            }
+        ],
+        "pulse" : [
+            {
+                "name": "doName",
+                "editName": "数据点名称",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "ym"
+            },
+            {
+                "name": "prefix",
+                "editName": "前缀",
+                "editType": 0,
+                "range": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "lnClass",
+                "editName": "引用类",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "GGIO"
+            },
+            {
+                "name": "lnInst",
+                "editName": "实例号",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "1"
+            },
+            {
+                "name": "CDC",
+                "editName": "CDC类型",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "MI"
+            }
+        ],
+        "control" : [
+            {
+                "name": "doName",
+                "editName": "数据点名称",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "yk"
+            },
+            {
+                "name": "prefix",
+                "editName": "前缀",
+                "editType": 0,
+                "range": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "lnClass",
+                "editName": "引用类",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "GGIO"
+            },
+            {
+                "name": "lnInst",
+                "editName": "实例号",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "1"
+            },
+            {
+                "name": "CDC",
+                "editName": "CDC类型",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "SPC"
+            }
+        ],
+        "param" : [
+            {
+                "name": "doName",
+                "editName": "数据点名称",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "yt"
+            },
+            {
+                "name": "prefix",
+                "editName": "前缀",
+                "editType": 0,
+                "range": "",
+                "defaultValue": ""
+            },
+            {
+                "name": "lnClass",
+                "editName": "引用类",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "GGIO"
+            },
+            {
+                "name": "lnInst",
+                "editName": "实例号",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "1"
+            },
+            {
+                "name": "CDC",
+                "editName": "CDC类型",
+                "editType": 0,
+                "range": "",
+                "defaultValue": "ING"
+            }
+        ]
+    }
+}

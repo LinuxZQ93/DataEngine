@@ -1,0 +1,335 @@
+{
+    "name" : "Modbus采集",
+    "param" : {
+        "signal" : [
+            {
+                "name": "name",
+                "editName": "名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "addr",
+                "editName": "寄存器地址",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "count",
+                "editName": "寄存器个数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "bit",
+                "editName": "位号",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 0
+            },
+            {
+                "name": "invert",
+                "editName": "是否取反",
+                "editType": 1,
+                "range": "否#是",
+                "dataType" : 0,
+                "defaultValue": 0
+            },
+            {
+                "name": "dataS",
+                "editName": "数据字节",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 2
+            },
+            {
+                "name": "special",
+                "editName": "特殊功能码",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": -1
+            }
+        ],
+        "measure" : [
+            {
+                "name": "name",
+                "editName": "名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "addr",
+                "editName": "寄存器地址",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "count",
+                "editName": "寄存器个数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "addCoef",
+                "editName": "加系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 0
+            },
+            {
+                "name": "multiCoef",
+                "editName": "乘系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 1
+            },
+            {
+                "name": "unit",
+                "editName": "单位",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "%"
+            },
+            {
+                "name": "dataS",
+                "editName": "数据字节",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 2
+            },
+            {
+                "name": "dataType",
+                "editName": "数据类型",
+                "editType": 1,
+                "range": "有符号整型#无符号整型#浮点型#无符号短整型#有符号短整型",
+                "dataType" : 0,
+                "defaultValue": 4
+            },
+            {
+                "name": "special",
+                "editName": "特殊功能码",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": -1
+            }
+        ],
+        "pulse" : [
+            {
+                "name": "name",
+                "editName": "名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "addr",
+                "editName": "寄存器地址",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "count",
+                "editName": "寄存器个数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "addCoef",
+                "editName": "加系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 0
+            },
+            {
+                "name": "multiCoef",
+                "editName": "乘系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 1
+            },
+            {
+                "name": "unit",
+                "editName": "单位",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "%"
+            },
+            {
+                "name": "dataS",
+                "editName": "数据字节",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 2
+            },
+            {
+                "name": "dataType",
+                "editName": "数据类型",
+                "editType": 1,
+                "range": "有符号整型#无符号整型#浮点型#无符号短整型#有符号短整型",
+                "dataType" : 0,
+                "defaultValue": 4
+            }
+        ],
+        "control" : [
+            {
+                "name": "name",
+                "editName": "名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "isPresetFormat",
+                "editName": "预置报文",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 0
+            },
+            {
+                "name": "presetFunc",
+                "editName": "预置功能码",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 0
+            },
+            {
+                "name": "presetAddr",
+                "editName": "预置地址",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 0
+            },
+            {
+                "name": "execAddr",
+                "editName": "执行地址",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "count",
+                "editName": "寄存器个数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 0
+            },
+            {
+                "name": "ifPulse",
+                "editName": "脉冲间隔",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 0
+            },
+            {
+                "name": "type",
+                "editName": "遥控类型",
+                "editType": 1,
+                "range": "开关遥控#复归遥控",
+                "dataType" : 0,
+                "defaultValue": 0
+            },
+            {
+                "name": "ctrlOn",
+                "editName": "控合",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "ctrlOff",
+                "editName": "控分",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 0
+            }
+        ],
+        "param" : [
+            {
+                "name": "name",
+                "editName": "名称",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "1"
+            },
+            {
+                "name": "addr",
+                "editName": "寄存器地址",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "count",
+                "editName": "寄存器个数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 0,
+                "defaultValue": 1
+            },
+            {
+                "name": "addCoef",
+                "editName": "加系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 0
+            },
+            {
+                "name": "multiCoef",
+                "editName": "乘系数",
+                "editType": 0,
+                "range": "",
+                "dataType" : 1,
+                "defaultValue": 1
+            },
+            {
+                "name": "unit",
+                "editName": "单位",
+                "editType": 0,
+                "range": "",
+                "dataType" : 2,
+                "defaultValue": "%"
+            }
+        ]
+    }
+}

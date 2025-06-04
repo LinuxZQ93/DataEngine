@@ -1,0 +1,52 @@
+{
+    "name": "Task1",
+    "enable" : false,
+    "param": {
+        "attribute": {
+            "bTans": false,
+            "content": [
+                {
+                    "name": "温湿度",
+                    "devTypeName": "温湿度",
+                    "address": 1,
+                    "description": "温湿度",
+                    "msgInfo": "th",
+                    "nodeModel": "th",
+                    "nodeId": "abc123",
+                    "extra": {
+                        "enableLog": true,
+                        "logLimitSize" : 10,
+                        "logLimitNum" : 5,
+                        "enablePrintFrame": true
+                    }
+                },
+                {
+                    "name": "温湿度1",
+                    "devTypeName": "温湿度",
+                    "address": 2,
+                    "description": "温湿度",
+                    "msgInfo": "th",
+                    "nodeModel": "th",
+                    "nodeId": "abc1234",
+                    "extra": {
+                        "enableLog": true,
+                        "logLimitSize" : 10,
+                        "logLimitNum" : 5,
+                        "enablePrintFrame": true
+                    }
+                }
+            ],
+            "template": "common"
+        },
+        "channel": {
+            "template": "RS-485",
+            "content": {
+                "comName": 0,
+                "baundRate": 7,
+                "stopBits": 0,
+                "parity": 0,
+                "dataBits": 3
+            }
+        }
+    }
+}

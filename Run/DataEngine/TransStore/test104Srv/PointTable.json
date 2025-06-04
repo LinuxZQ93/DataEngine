@@ -1,0 +1,53 @@
+{
+    "name" : "test104Srv",
+    "template" : "TransTable",
+    "param" : {
+        "signal" : [
+            {
+                "dotName": "温湿度#comstate",
+                "devName" : "温湿度2",
+                "pointId" : 0,
+                "invert" : 0
+            },
+            {
+                "dotName": "Composite#hc1",
+                "devName" : "Composite",
+                "pointId" : 0,
+                "invert" : 0
+            }
+        ],
+        "measure" : [
+            {
+                "dotName": "温湿度#温度",
+                "devName" : "温湿度2",
+                "pointId" : 0,
+                "addCoef" : 0,
+                "multiCoef" : 1,
+                "responseRate" : 2
+            },
+            {
+                "dotName": "Composite#hc2",
+                "devName" : "Composite",
+                "pointId" : 0,
+                "addCoef" : 0,
+                "multiCoef" : 1,
+                "responseRate" : 2
+            }
+        ],
+        "pulse" : [],
+        "control" : [
+            {
+                "dotName": "温湿度#test",
+                "devName" : "温湿度2",
+                "pointId" : 0
+            }
+        ],
+        "param" : [
+            {
+                "dotName": "温湿度#test1",
+                "devName" : "温湿度2",
+                "pointId" : 0
+            }
+        ]
+    }
+}

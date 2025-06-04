@@ -1,0 +1,68 @@
+{
+    "name" : "温湿度",
+    "template" : "Modbus采集",
+    "param" : {
+        "signal" : [
+            {
+                "name": "comstate",
+                "addr" : 1,
+                "count" : 1,
+                "bit" : 1,
+                "invert" : 0,
+                "dataS" : 2,
+                "special" : 0
+            }
+        ],
+        "measure" : [
+            {
+                "name": "温度",
+                "addr" : 2,
+                "count" : 1,
+                "addCoef" : 0,
+                "multiCoef" : 1,
+                "uint" : "%",
+                "dataS" : 2,
+                "dataType" : 4,
+                "special" : 0
+            },
+            {
+                "name": "湿度",
+                "addr" : 3,
+                "count" : 1,
+                "addCoef" : 0,
+                "multiCoef" : 1,
+                "uint" : "%",
+                "dataS" : 2,
+                "dataType" : 4,
+                "special" : -1
+            }
+        ],
+        "pulse" : [
+
+        ],
+        "control": [
+            {
+                "name": "test",
+                "isPresetFormat": 0,
+                "presetFunc": 0,
+                "presetAddr": 0,
+                "execAddr": 1,
+                "count": 1,
+                "ifPulse": 0,
+                "type": 0,
+                "ctrlOn": 1,
+                "ctrlOff": 0
+            }
+        ],
+        "param" : [
+            {
+                "name" : "test1",
+                "addr" : 1,
+                "count" : 1,
+                "addCoef" : 0,
+                "multiCoef" : 1,
+                "uint" : ""
+            }
+        ]
+    }
+}
